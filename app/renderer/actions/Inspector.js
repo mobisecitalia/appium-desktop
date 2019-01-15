@@ -229,6 +229,7 @@ export function applyClientMethod (params) {
         // now record the actual action
         let args = [variableName, variableIndex];
         args = args.concat(params.args || []);
+        args = args.concat([strategy, selector]);
         dispatch({type: RECORD_ACTION, action: params.methodName, params: args });
       }
       dispatch({type: METHOD_CALL_DONE});

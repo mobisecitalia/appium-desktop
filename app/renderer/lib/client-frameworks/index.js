@@ -4,6 +4,7 @@ import JavaFramework from './java';
 import PythonFramework from './python';
 import RubyFramework from './ruby';
 import RobotFramework from './robot';
+import JsonFramework from './json';
 
 const frameworks = {
   jsWd: JsWdFramework,
@@ -12,6 +13,7 @@ const frameworks = {
   python: PythonFramework,
   ruby: RubyFramework,
   robot: RobotFramework,
+  json: JsonFramework,
 };
 
 export default frameworks;
