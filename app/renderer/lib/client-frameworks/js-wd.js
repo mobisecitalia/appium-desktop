@@ -74,8 +74,8 @@ main().catch(console.log);
   codeFor_swipe (varNameIgnore, varIndexIgnore, x1, y1, x2, y2) {
     return `await (new wd.TouchAction(driver))
   .press({x: ${x1}, y: ${y1}})
-  .moveTo({x: ${x2}, y: ${y2}})
   .wait(600)
+  .moveTo({x: ${x2}, y: ${y2}})
   .release()
   .perform()
     `;
