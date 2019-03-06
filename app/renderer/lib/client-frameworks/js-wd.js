@@ -75,6 +75,7 @@ main().catch(console.log);
     return `await (new wd.TouchAction(driver))
   .press({x: ${x1}, y: ${y1}})
   .moveTo({x: ${x2}, y: ${y2}})
+  .wait(600)
   .release()
   .perform()
     `;

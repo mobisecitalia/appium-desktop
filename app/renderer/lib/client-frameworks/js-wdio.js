@@ -83,6 +83,7 @@ ${this.indent(this.chainifyCode(code), 2)}
   codeFor_swipe (varNameIgnore, varIndexIgnore, x1, y1, x2, y2) {
     return `driver.touchAction([
   {action: 'press', x: ${x1}, y: ${y1}},
+  {action: 'wait', 600},
   {action: 'moveTo', x: ${x2}, y: ${y2}},
   'release'
 ]);`;

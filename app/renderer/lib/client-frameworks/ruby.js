@@ -80,6 +80,7 @@ driver.quit`;
     return `TouchAction
   .new
   .press({x: ${x1}, y: ${y1}})
+  .wait(600)
   .moveTo({x: ${x2}, y: ${y2}})
   .release
   .perform

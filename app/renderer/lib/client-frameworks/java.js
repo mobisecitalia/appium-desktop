@@ -112,6 +112,7 @@ ${this.indent(code, 4)}
     return `(new TouchAction(driver))
   .press({x: ${x1}, y: ${y1}})
   .moveTo({x: ${x2}: y: ${y2}})
+  .waitAction(Duration.ofMillis(600))
   .release()
   .perform()
   `;
