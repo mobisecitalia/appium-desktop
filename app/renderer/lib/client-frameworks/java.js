@@ -111,8 +111,8 @@ ${this.indent(code, 4)}
   codeFor_swipe (varNameIgnore, varIndexIgnore, x1, y1, x2, y2) {
     return `(new TouchAction(driver))
   .press({x: ${x1}, y: ${y1}})
-  .moveTo({x: ${x2}: y: ${y2}})
   .waitAction(Duration.ofMillis(600))
+  .moveTo({x: ${x2}: y: ${y2}})
   .release()
   .perform()
   `;
